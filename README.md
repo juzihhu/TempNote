@@ -46,11 +46,59 @@ MVCC（多版本并发控制）：通过「版本链」来控制并发事务访�
 ### MySQL 有哪些锁？
 
 https://www.cnblogs.com/y2ek/p/12630007.html
+
 https://blog.csdn.net/weixin_43093878/article/details/105858568
+
 https://blog.csdn.net/hongchh/article/details/52914507?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-52914507-blog-102891495.235%5Ev38%5Epc_relevant_sort&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-52914507-blog-102891495.235%5Ev38%5Epc_relevant_sort&utm_relevant_index=1
+
+
 https://blog.csdn.net/lukas_sun/article/details/53811087?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-53811087-blog-52914507.235%5Ev38%5Epc_relevant_sort&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-53811087-blog-52914507.235%5Ev38%5Epc_relevant_sort&utm_relevant_index=2
+
 https://blog.csdn.net/lukas_sun/article/details/53770959
+
 https://blog.csdn.net/pl0321/article/details/115507286
 
 
+//带权区间调度问题
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+const int MAX_N=10000;
+int N,S[MAX_N],T[MAX_N],V[MAX_N];
 
+struct Assign{
+    int start,end,value;
+    Assign(int s,int t,int v):start(s),end(t),value(v){}
+};
+
+Assign itv [MAX_N];
+bool cmp(Assign a,Assign b){
+    if(a.end==b.end) return a.value>b.value;
+    return a.end<b.end;
+}
+// 求最多的区间调度
+void solve_nums(){
+    int ans=0,t=0;
+    for(int i=0;i<N;++i){
+        if(t<itv[i].start){
+            ++ans;
+            t=itv[i].end;
+        }
+    }
+    cout<<ans;
+}
+
+//求最大的区间调度
+void solve_maxLen(){
+    vector<int> dp(N,0);
+    dp[0]=itv[0].end-itv[0].start;
+    for(int i=1;i<N;++i){
+        
+    }
+}
+int main(){
+
+    sort(itv,itv+N,cmp);
+    return 0;
+}
