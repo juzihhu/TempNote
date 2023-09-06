@@ -45,3 +45,12 @@ MVCC（多版本并发控制）：通过「版本链」来控制并发事务访�
 
 ### MySQL 有哪些锁？
 
+https://www.cnblogs.com/y2ek/p/12630007.html
+https://blog.csdn.net/weixin_43093878/article/details/105858568
+https://blog.csdn.net/hongchh/article/details/52914507?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-52914507-blog-102891495.235%5Ev38%5Epc_relevant_sort&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-52914507-blog-102891495.235%5Ev38%5Epc_relevant_sort&utm_relevant_index=1
+https://blog.csdn.net/lukas_sun/article/details/53811087?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-53811087-blog-52914507.235%5Ev38%5Epc_relevant_sort&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-53811087-blog-52914507.235%5Ev38%5Epc_relevant_sort&utm_relevant_index=2
+https://blog.csdn.net/lukas_sun/article/details/53770959
+https://blog.csdn.net/pl0321/article/details/115507286
+
+
+
